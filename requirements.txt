@@ -1,0 +1,4 @@
+# NeuroIDS-Sat Requirements
+# Core dependencies only - no GPU required
+
+numpy>=1.20.0
