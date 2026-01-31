@@ -160,7 +160,8 @@ If you use this code, please cite:
 
 ## Author
 
-Toby R. Davis  
+Toby R. Davis 
+Ms. Sci. Scholar Cybersecurity & Operations
 Department of Computer Science and Engineering  
 Mississippi State University  
 trd183@msstate.edu
