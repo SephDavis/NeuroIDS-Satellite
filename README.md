@@ -2,20 +2,31 @@
 
 **Neuromorphic Intrusion Detection for CubeSat Constellations Under Extreme Power Constraints**
 
-[![arXiv](https://img.shields.io/badge/arXiv-2601.XXXXX-b31b1b.svg)](https://arxiv.org/abs/2601.XXXXX)
+[![DOI](https://img.shields.io/badge/DOI-10.13140%2FRG.2.2.16893.42724-blue)](https://www.researchgate.net/doi/10.13140/RG.2.2.16893.42724)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 
-> Spiking neural network IDS for CubeSat cybersecurity. **1,500× more power-efficient** than conventional approaches with TMR radiation tolerance. Detects all five attack categories at 70.1% accuracy.
+> Spiking neural network IDS for CubeSat cybersecurity. **1,500× more power-efficient** than conventional approaches with TMR radiation tolerance. Detects all five attack categories at 70.1% accuracy while consuming only 1.52 mW.
 
 ## Overview
 
 NeuroIDS-Sat adapts spiking neural networks for satellite deployment with:
-- **Optimized architecture**: 96-48 hidden layers, 75 timesteps
+- **Optimized architecture**: 96-48 hidden layers, 75 timesteps, 8,933 parameters
 - **TMR encoding**: Triple Modular Redundancy for radiation tolerance (+3.3% accuracy under SEU)
 - **Focal loss training**: Enables detection of rare attack classes (R2L, U2R)
-- **Minority class oversampling**: SMOTE-lite approach for class imbalance
+- **Minority class oversampling**: Noise-injected oversampling for class imbalance
 - **Vectorized batch processing**: 10-50× faster training
+- **Pareto-optimal tradeoff**: 70.1% accuracy in a power regime where conventional IDS cannot operate at all
+
+## Related Papers
+
+NeuroIDS-Sat is the second paper in the NeuroIDS series:
+
+| Paper | Description | Link |
+|-------|-------------|------|
+| **NeuroIDS** | Terrestrial SNN-based IDS, 73.4% accuracy at 1,620 pJ/inference | [DOI: 10.13140/RG.2.2.23827.13604](https://www.researchgate.net/doi/10.13140/RG.2.2.23827.13604) |
+| **NeuroIDS-Sat** | Space-adapted variant with TMR radiation tolerance (this repo) | [DOI: 10.13140/RG.2.2.16893.42724](https://www.researchgate.net/doi/10.13140/RG.2.2.16893.42724) |
+| **NeuroIDS-Adversarial** | Adversarial robustness analysis and defensive hardening | [GitHub](https://github.com/SephDavis/NeuroIDS-Adversarial) |
 
 ## Installation
 
@@ -170,17 +181,18 @@ neuroids_sat/
 
 ```bibtex
 @article{davis2026neuroidsat,
-  title={NeuroIDS-Sat: Neuromorphic Intrusion Detection for CubeSat 
+  title={NeuroIDS-Sat: Neuromorphic Intrusion Detection for CubeSat
          Constellations Under Extreme Power Constraints},
   author={Davis, Toby R.},
-  journal={arXiv preprint},
+  doi={10.13140/RG.2.2.16893.42724},
   year={2026}
 }
 ```
 
 ## Author
 
-**Toby R. Davis**  
-M.S. Cybersecurity & Operations  
-Mississippi State University  
+**Toby R. Davis**
+M.S. Cybersecurity & Operations
+Mississippi State University
 trd183@msstate.edu
+GitHub: [@SephDavis](https://github.com/SephDavis)
