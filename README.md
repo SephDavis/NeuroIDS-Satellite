@@ -108,7 +108,7 @@ Results on NSL-KDD (125,973 train / 22,544 test samples):
 | Metric | NeuroIDS-Sat | Conventional CPU | Ratio |
 |--------|--------------|------------------|-------|
 | Spikes/sample | 758.5 | — | — |
-| Energy/inference | 1,517 pJ | 45.2 mJ | 29,800× |
+| Energy/inference | 1,517 pJ | 45.2 mJ | 29,800,000× |
 | Power (continuous) | 1.52 mW | 2,300 mW | **1,513×** |
 
 **Mission Lifetime (3U CubeSat, 20 Wh Battery)**:
